@@ -1,4 +1,4 @@
-import java.util.Iterator;
+
 
 public class DinerMenu implements Menu {
 	static final int MAX_ITEMS = 6;
@@ -29,6 +29,6 @@ public class DinerMenu implements Menu {
 
 	public Iterator createIterator() {
 		
-		return null;
+		return  new DinnerMenuIterator(menuItems);
 	}
 }
